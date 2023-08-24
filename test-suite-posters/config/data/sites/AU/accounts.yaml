@@ -1,0 +1,59 @@
+addresses:
+    - &address01
+      id: default
+      # lastName: Smith # auto setup based on random data
+      # firstName: Peter
+      addressLine1: 25 DEV TCE
+      addressLine2: Nothing here
+      city: ROCKBANK
+      zip: 3335
+      state: Victoria
+      stateCode: VIC
+      countryCode: AU
+      country: Australia
+      phone: 61812345677
+    - &address02
+      id: alternative
+      # lastName: Smith # auto setup based on random data
+      # firstName: Peter
+      addressLine1: 6 Wall St.
+      addressLine2: Nothing here
+      city: Burlington
+      zip: "01803"
+      state: Massachusetts
+      stateCode: MA
+      countryCode: AU
+      country: Australia
+      phone: 61812345677
+    - &address03
+      id: pickupatstore
+      # lastName: Smith # auto setup based on random data
+      # firstName: Peter
+      addressLine1: Collect at Post
+      addressLine2: 16 Sword Street
+      city: MUTTABURRA
+      zip: 4732
+      state: Massachusetts
+      stateCode: QLD
+      countryCode: AU
+      country: Australia
+      phone: +61 13 76 78
+
+account:
+    - email: cbloadtest@gmail.com
+      isProd: true
+      prodUrl: ${account.urlType.produrl}
+      firstname: cbload
+      lastname: test
+      password: ${account.defaults.password}
+      mobile:  61291920995
+      Dob: 30/08/1990
+      addressTitile: 25 DEV TCE, ROCKBANK VIC 3335
+      billingAddress: *address01
+      shippingAddress: *address01
+      alternativeAddress: *address02
+      pickupatstore: *address03
+      Statedata: '{"riskData":{"clientData":"eyJ2ZXJzaW9uIjoiMS4wLjAiLCJkZXZpY2VGaW5nZXJwcmludCI6InJ5RUdYOGVacEowMDMwMDAwMDAwMDAwMDAwUUdlTjUxS05lYTAwMzIyNTQ4NzJjVkI5NGlLekJHQUdrUnBaWkd4NzVTMTZHb2g1TWswMDR2a1RCYkRJVFRSMDAwMDBxWmtURTAwMDAwSjRTcmVOaFZqa1hWaW1wRDcwb0U6NDAiLCJwZXJzaXN0ZW50Q29va2llIjpbXSwiY29tcG9uZW50cyI6eyJ1c2VyQWdlbnQiOiI0N2MyYWM1YjYyZjEwNWFmYzI1NjU4MzQzYzFiNjY3MiIsIndlYmRyaXZlciI6MCwibGFuZ3VhZ2UiOiJlbi1VUyIsImNvbG9yRGVwdGgiOjI0LCJkZXZpY2VNZW1vcnkiOjgsInBpeGVsUmF0aW8iOjEuMjUsImhhcmR3YXJlQ29uY3VycmVuY3kiOjgsInNjcmVlbldpZHRoIjo4NjQsInNjcmVlbkhlaWdodCI6MTUzNiwiYXZhaWxhYmxlU2NyZWVuV2lkdGgiOjgyNCwiYXZhaWxhYmxlU2NyZWVuSGVpZ2h0IjoxNTM2LCJ0aW1lem9uZU9mZnNldCI6LTMzMCwidGltZXpvbmUiOiJBc2lhL0NhbGN1dHRhIiwic2Vzc2lvblN0b3JhZ2UiOjEsImxvY2FsU3RvcmFnZSI6MSwiaW5kZXhlZERiIjoxLCJhZGRCZWhhdmlvciI6MCwib3BlbkRhdGFiYXNlIjoxLCJwbGF0Zm9ybSI6IldpbjMyIiwicGx1Z2lucyI6ImMwOGU5NzhhYjAyZTM1OTViZmI5Y2I3ZWJlZmVmMzMzIiwiY2FudmFzIjoiOGNhMjZjNWUwYjU3MWIzYTgyODQ3YTcwNzY0ZDgyMTciLCJ3ZWJnbCI6IjFiOTY0ZTJhNTk4NTcyODRiNGMyYzZmY2MwOTZlNzc1Iiwid2ViZ2xWZW5kb3JBbmRSZW5kZXJlciI6Ikdvb2dsZSBJbmMuIChJbnRlbCl+QU5HTEUgKEludGVsLCBJbnRlbChSKSBVSEQgR3JhcGhpY3MgNjIwIERpcmVjdDNEMTEgdnNfNV8wIHBzXzVfMCwgRDNEMTEtMjcuMjAuMTAwLjg5MzUpIiwiYWRCbG9jayI6MCwiaGFzTGllZExhbmd1YWdlcyI6MCwiaGFzTGllZFJlc29sdXRpb24iOjAsImhhc0xpZWRPcyI6MCwiaGFzTGllZEJyb3dzZXIiOjAsImZvbnRzIjoiMmFlMmU3ZmYzYTc3ZTkyMjM0NzQ1ZTFlNjIzOGU2YzciLCJhdWRpbyI6IjkwMmYwZmU5ODcxOWI3NzllYTM3ZjI3NTI4ZGZiMGFhIiwiZW51bWVyYXRlRGV2aWNlcyI6IjgxN2Y3MTIyOGM3OWFlZTAyZDdjOTE4OGQyN2JlODkzIn19"},"paymentMethod":{"type":"scheme","holderName":"vishnu-Visa","encryptedCardNumber":"adyenjs_0_1_25$SZDcibeh6xLpMRSWliY/VTYoMExnizbqfiaO+xFw5EsJiIiWm1yfeSJo7HNrjEyJPPH5ZUtKmr7OSPFFovITpaN8RIH9K4EgUc7IyY348aRg8ibn3WFhRp2FhPoZMV1bQtbAsvTrEUgZc1V+WnvuJSj41CrVbr5q7z8yHLizPvrrHnYjEK9imvrScWxKLypFRREXYnk/LGnUaUL4s9RPJhbfBEnSNvcGbpGaIJK/edFzuXZIdU227srL48GdREVlfoFKPVVffYJm1TTZhyzqY2it1oTvBq3VDsDOFQ8/EWYDnMK1h2mSHObQoQzw2MiahLwje04bU/b50LswhaRF5w==$SWMW7XWYaDjwmKVD2MrQinMOzLpPmo5ro7wXNa4IUxlGiWaXfxzWYC2CE2o7F+Atv4CglISEzu36chY2LTL7IfnOT7DKcFsY87bktO8ebgnc2aHuYvCTcqhAnQE6O/CgPilywD0SMTIQJXVg3KfZfWnOachAjAw6BRbqWVoF8juJ9il4Ixb6iWbElQbdj6Z8csIBejyrTTSnbfCW47Oz8XQyT1b/EqwdxF/tP4J/j2AlGwoGLBBuuwvaXXPeSK6O5nj9+ZNVyFOgvPEHI07tmESvFogIgNazEGtrgHAzgCExI6WTJAumOBUqdJqmkkCobrs2SGbTqlIAhI1NarOzqOfqYAzGRggn8W5Nv4fyWdWJCW7NrkEdL3LpkN1/FHguXlx25Wfn+7wJYTj+VUvryo/qCsAwsvvDINRo0zrBTs1LWUoHYLS/HFLSvT3isIHVje1QHYbqwYdO2JzCmCquHADyA8NT11j9KK7ftNZnvl9lkldUAmpb2bEz36b70KUwDC95wKcE/mydL3LS1/OJ8Z5Mapjh6+tipGuNFXvnzI0q9bUtf7H+GPTq/V6LtLnkOQXFunaV5MhYUfldj8dh6IPmKf93aD89vGdzYXbCj1j55jw45S3BK4IPdNJluyjyrG31mOAAHQCwX6IJwj7HNehF2Sub2l6fdxuX7AvnkiJxDPpch2CI1CmQPOMuyjL6W+xohsWkH4zUYhX9SD9Kfv6/JUF4sT11lkVcPXw7mZnyj88js4U1AJYSs7cVcw0KmOEjKvPUJSDeZwUVsPp77XfHgBajFLsBgkxlhFARuGeHr7dGTongBg2KQq5fLjDKoXZEilC0Ln4m6/n3740HXXx2OQ==","encryptedExpiryMonth":"adyenjs_0_1_25$EJtN2xQtdE0Xsx2jadMtjiJKdwAB2B/1fBlg4J2cTiIl4U5sTYJoGC5Ufe/F/hRGDwm1cZ7dNFbPBkhu4VqBxOZVZhsLxgf6HmBLnCDXYF4l19r0Es+8guYPOzKx1MQo5sUNHGWhvuDJVV2si9TOzXDm2M9XfpgJEY3Zh8k4xtZB7Vxfkk1Q5TUIj5M09e8zVe1GgFWeuhdY9g1jnxnYdB/oTUpCdTYz09Z6UhZPiyHcDWJwFpR/orJkRt9pXnVniVbzwqIPq+bjZv9PUVl4YOjh4BMAHT3SZ0TxPqbdI+PTIFIFJfC730crngW44/stj3N8Iqku4dXrWU3eWk/pIQ==$X9p6k06DDgYufthTcuXEfl480G44FuZ5IqO6Kha9Q46gm0h1WSvOf0qQtgl4Zc+1SoGuKzSekFEoSnkprZe29y8uhZPxz5bFmBtqibQ61z5oi/MZgdncpmDcHX4ZzCysQKr8joLEayw2uhRirs1l5DAjPfHGSYY5Dr4=","encryptedExpiryYear":"adyenjs_0_1_25$gcqP1Y5/KGZBE1onTYwnryjmfbcdKej8kTMRQErOdYmVJGjgviqr91qCccaJ3OrV9g2dB3or7bsWxUY59oYHJhthiKl27jYG+oGFlkvRTaHDO6WLmVTshAlAbV9MZKoSQJsjVKQhj2+WiRyqupe5m/vMm1WhD09ckSG7dPWzdPNJ1YLoxltmY/ae4ThbNdxaurOICwIxvD1uQfIPNwib0yrhlOm8gEE6Q20QHUNj2b3VuP25ptoXFfpiu8mgMdJUyX5E/vlMhJjr8H8UBDuZqpqe1JjaU1nc3e/K+40YRUecu0pNCyDm7DdWF6oW8iH6jnI9mQKdFeN5FOX/hQafHw==$gku7fZttMGKZWOKmTJO2gql665g++41Ae10MsOF5cP4aoc8LR1g0MsnBGEk1n+B2nK5NTpUTHpqIvkEdQX2DSwhruAB/DNw+9uDgpqByLb8ehU55pYWMZhOVGBiNL1K8HZJS0fwOS08qYEMCsJDLUntIB4J24ueF0zmD","encryptedSecurityCode":"adyenjs_0_1_25$eu827XggrRUwQnhPmDXJ6NzqwwaQ7b2YcRoFhSMIg9vam9phirHiJBuEQ0VbLd69IhH6m2jEKMejK9NfYL0PZ6mbi2ERGzswa9U0lh0vIimFAldg7kRylKJpLrLNtvvxh2GkIo6kuLENfD8wFDNmDmDi96x3Vqn2E4BNEjyH3CJ0iayownN0bYA5hEScZzpGy8cyiXQCfYOs4jsWtyJzSeddcj9XnTlxtdRzPebZElkhnIuviODSIkUIJJeR6tdQvOfSGaLOBAPzcHSqiXV1r6TXwIrS68FM5YMcxB8mR5PowKDao9102uja8qSmb2iP4oo+RWwdhhdD+nD2wJlsjA==$9WVrF0yb1pIkB1lNBFCV00iyKozzm1CfYxJq7QY16q2hMah9s4AieT7uy+tLSQ1lXkA/zRtGyZGaYx5Gr2MHaAn7bcO55g/T4/U8pZZmBBXXGcQiZXQ3rSCPz49DwyYrnM59Sz7IOjf5Zk/4RX2tN8woO/YPbEmazY1wxAC8fNJlCsqdCW32sUnUaqnjxETwxBYfGNNK4vWYUoHO21omgRJl6PDPHvzNBKF5Ds5JrGPIkQWtRwAuSRErhk7Iatwi+94RMGZ4605Sd5LcRdHC3kvLhPb7FwGKtyQ1INrH15ljCyJc2nyEi/+YirZKaIQWKxESJiRUu5m869yiHbLHn4dWLm4FXASb/9Wa7azszt+T/rFfDA4SGi3rTAsTtYRDLP9Ani3xdlLdus38sfmg/tf1Glth4EsWQcYOAc0LM+HxPx2vG9lKQ3lmPZFJFgM8Cmn3HESm3TNYSZmJGchPnckVCurle1xIXg5HkFwTbvzEe6l8ffL/kqmQeePG0cbdlykm4jY="},"browserInfo":{"acceptHeader":"*/*","colorDepth":24,"language":"en-US","javaEnabled":false,"screenHeight":864,"screenWidth":1536,"userAgent":"Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/93.0.4577.82+Safari/537.36","timeZoneOffset":-330},"clientStateDataIndicator":true}'
+      # creditCards: 
+        # we get us global cards, local cards would have to be in this file and likely referenced here
+      orderID: # placeholder for special scenarios

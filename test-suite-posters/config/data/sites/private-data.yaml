@@ -1,0 +1,7 @@
+# General information on how to access the site under test
+general:
+    host: 35.184.136.113:8443
+    baseUrl: "https://dev.citybeach.com/"
+    credentials:
+        username: 
+        password:
